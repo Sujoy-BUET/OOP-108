@@ -21,6 +21,14 @@ class Stats<T extends Number> {
         } else return false;
     }
 
+    /*
+    <S extends Number> boolean sameAvgAny(Stats<S> obj) {
+        if (average() == obj.average()) {
+            return true;
+        } else return false;
+    }
+    */    
+
     boolean sameAvgAny(Stats<?> obj) {
         if (average() == obj.average()) {
             return true;
