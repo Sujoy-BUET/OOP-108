@@ -13,12 +13,12 @@ public class GenObject {
 
     public static void main(String[] args) {
         GenObject genObject = new GenObject();
-        genObject.setObj("Hello");
+        //genObject.setObj("Hello");
         //genObject.setObj(10);
-        //genObject.setObj(new Thread());
+        genObject.setObj(new Thread());
         System.out.println(genObject.getObj());
-        String s = (String) genObject.getObj();
-        System.out.println(s);
+        //String s = (String) genObject.getObj();
+        //System.out.println(s);
     }
 }
 

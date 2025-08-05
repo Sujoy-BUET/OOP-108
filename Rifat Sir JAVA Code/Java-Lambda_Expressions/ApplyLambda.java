@@ -8,11 +8,11 @@ public class ApplyLambda {
         Runnable r = new Runnable() {
             @Override
             public void run() {
-                System.out.println("Runnable Interface");
+                System.out.println("Runnable Interface 0");
             }
         };
 
-        Runnable r1 = () -> System.out.println("Runnable Interface");
+        Runnable r1 = () -> System.out.println("Runnable Interface 1");
 
         Runnable r2 = () -> {
             for (int i = 0; i < 10; i++) {
@@ -48,7 +48,7 @@ public class ApplyLambda {
          * }
          * });
          */
-
+        
         Collections.sort(al, (o1, o2) -> o1.getName().compareTo(o2.getName()));
         al.forEach(e -> System.out.println(e.getId() + ", " + e.getName()));
         System.out.println();
@@ -59,7 +59,7 @@ public class ApplyLambda {
             else
                 return o1.getId() - o2.getId();
         });
-        al.forEach(e -> System.out.println(e.getId() + ", " + e.getName()));
+        al.forEach(e -> System.out.println(e));
         System.out.println();
 
         Collections.sort(al, Comparator.comparing(MyClass::getId).thenComparing(MyClass::getName));

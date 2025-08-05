@@ -46,8 +46,13 @@ public class ArrayListDemo3 {
         // iterate
         for (int i = 0; i < al.size(); i++) {
             MyClass mc = al.get(i);
-            System.out.println(mc.getId() + ", " + mc.getName());
+            System.out.println(mc);
+            //System.out.println(mc.getId() + ", " + mc.getName());
         }
         System.out.println("");
+        
+        for(MyClass x:al){
+            System.out.println(x);
+        }
     }
 }

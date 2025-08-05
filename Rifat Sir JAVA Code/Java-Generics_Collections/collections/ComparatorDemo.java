@@ -14,7 +14,6 @@ class TestClassComparator implements Comparator<TestClass> {
 }
 
 class TestClass implements Comparable<TestClass> {
-
     private String name;
     private int id;
 
@@ -39,7 +38,6 @@ class TestClass implements Comparable<TestClass> {
 }
 
 class ComparatorDemo {
-
     public static void printList(List<TestClass> al) {
         for (int i = 0; i < al.size(); i++) {
             System.out.println(al.get(i).getId() + ", " + al.get(i).getName());
@@ -58,9 +56,9 @@ class ComparatorDemo {
         al.add(new TestClass(6, "F"));
 
         printList(al);
-        Collections.sort(al);
+        Collections.sort(al);    // ***
         printList(al);
-        Collections.sort(al, new TestClassComparator());
+        Collections.sort(al, new TestClassComparator());  // ***
         printList(al);
     }
 }

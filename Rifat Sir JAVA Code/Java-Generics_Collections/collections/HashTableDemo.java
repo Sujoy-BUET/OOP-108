@@ -3,7 +3,6 @@ package collections;
 import java.util.Hashtable;
 
 class HashTableDemo {
-
     public static void main(String args[]) {
         Hashtable<String, Double> balance = new Hashtable<>();
 

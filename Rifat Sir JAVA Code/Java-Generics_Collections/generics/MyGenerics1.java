@@ -19,10 +19,11 @@ public class MyGenerics1<T> {
         myGenerics1.setObj("Hello");
         String str = myGenerics1.getObj();
         System.out.println(str);
-        /*MyGenerics1 noGenerics = new MyGenerics1(); // still possible
-        noGenerics.setObj(20);
-        noGenerics.setObj("World");
-        System.out.println(noGenerics.getObj());*/
+        // MyGenerics1 noGenerics = new MyGenerics1(); // still possible
+        // noGenerics.setObj(20);
+        // System.out.println(noGenerics.getObj());
+        // noGenerics.setObj("World");
+        // System.out.println(noGenerics.getObj());
     }
 }
 

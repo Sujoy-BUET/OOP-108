@@ -28,7 +28,7 @@ public class ArrayListDemo2 {
 
         // convert to array
         Integer ia[] = new Integer[al.size()];
-        al.toArray(ia);
+        al.toArray(ia); // ***
 
         // iterate array
         for (int i = 0; i < ia.length; i++) {
@@ -37,7 +37,7 @@ public class ArrayListDemo2 {
         System.out.println();
 
         // convert array to list
-        List<Integer> alist = Arrays.asList(ia);
+        List<Integer> alist = Arrays.asList(ia); // *** 
 
         // foreach iterate
         for (Integer i : alist) {

@@ -1,6 +1,6 @@
 // Use an enum constructor, instance variable, and method.
 enum AppleNew {
-    Jonathan(10), GoldenDel(9), RedDel(12), Winesap(15), Cortland(8);
+    Jonathan(10), GoldenDel(9), RedDel(12), Winesap(15), Cortland(8); // these are the objects(fixed)
 
     private int price; // price of each apple
 
@@ -30,15 +30,14 @@ public class EnumDemo3 {
     }
     public static void main(String args[]) {
         // Display price of Winesap.
-        System.out.println("Winesap costs " +
-                AppleNew.Winesap.getPrice() +
-                " cents.\n");
+        System.out.println("Winesap costs " +AppleNew.Winesap.getPrice() +" cents.\n");
+        
         // Display all apples and prices.
         System.out.println("All apple prices:");
         for (AppleNew a : AppleNew.values()) {
-            System.out.println(a + " costs " + a.getPrice() +
-                    " cents.");
+            System.out.println(a + " costs " + a.getPrice() + " cents.");
         }
+
         System.out.println(AppleNew.Winesap.getPrice());
         AppleNew.Winesap.setPrice(100);
         System.out.println(AppleNew.Winesap.getPrice());

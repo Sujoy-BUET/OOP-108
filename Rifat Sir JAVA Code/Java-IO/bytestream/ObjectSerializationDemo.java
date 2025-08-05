@@ -1,12 +1,13 @@
 package bytestream;
 
-import java.io.Serializable;
+//import java.io.Serializable;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.io.Serializable;
 
-class MyClass implements Serializable {
+class MyClass  implements Serializable{
     String s;
     int i;
     double d;
@@ -31,6 +32,7 @@ public class ObjectSerializationDemo {
             MyClass object2 = new MyClass("Hello2", 7, 1.7e10);
             System.out.println("object1: " + object1);
             System.out.println("object2: " + object2);
+            System.out.println();
             FileOutputStream fos = new FileOutputStream("files/serial");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
             oos.writeObject(object1);

@@ -42,5 +42,6 @@ public class MyGenerics3<T extends X & Y & Z> {
         MyGenerics3<MyX> myGenerics = new MyGenerics3<>();
         myGenerics.setObj(objX);
         System.out.println(myGenerics.getObj());
+        myGenerics.getObj().f1();
     }
 }

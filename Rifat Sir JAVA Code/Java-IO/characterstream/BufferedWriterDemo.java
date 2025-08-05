@@ -13,9 +13,9 @@ class BufferedWriterDemo {
             bw.write(s);
             bw.newLine();
         }
-        bw.close();
-        fw.close();
-        br.close();
-        fr.close();
+        bw.close(); 
+        fw.close(); 
+        br.close(); 
+        fr.close(); 
     }
 }

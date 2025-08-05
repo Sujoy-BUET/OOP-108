@@ -13,13 +13,13 @@ class ArraysDemo {
         // display, sort, display
         System.out.print("Original contents: ");
         display(array);
-        Arrays.sort(array);
+        Arrays.sort(array);   // **
         System.out.print("Sorted: ");
         display(array);
 
 
         // fill and display
-        Arrays.fill(array, 2, 6, -1);
+        Arrays.fill(array, 2, 6, -1);   // **
         System.out.print("After fill(): ");
         display(array);
 
@@ -29,10 +29,9 @@ class ArraysDemo {
         System.out.print("After sorting again: ");
         display(array);
 
-
         // binary search for -9
         System.out.print("The value -9 is at location ");
-        int index = Arrays.binarySearch(array, -9);
+        int index = Arrays.binarySearch(array, -9);    // ***
         System.out.println(index);
     }
 

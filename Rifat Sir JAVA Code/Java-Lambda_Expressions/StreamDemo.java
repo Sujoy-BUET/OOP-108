@@ -39,7 +39,7 @@ public class StreamDemo {
         list.add(new MyClass(1, "Rodgers"));
         list.add(new MyClass(2, "Bradley"));
         list.add(new MyClass(3, "Chambers"));
-        list.add(new MyClass(4, "Calvin"));
+        list.add(new MyClass(4, "Calvin"));     
         list.add(new MyClass(5, "Quinn"));
         list.add(new MyClass(6, "Mccoy"));
 

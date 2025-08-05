@@ -1,6 +1,7 @@
 @FunctionalInterface
 interface MyNumber {
     double getValue();
+    // can't have more than one method
 }
 
 @FunctionalInterface
